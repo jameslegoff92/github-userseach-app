@@ -1,0 +1,148 @@
+/* ===========
+    variables 
+   =========== */
+:root {
+  /* font sizes  */
+  --fs-100: 0.6875rem; //11px 
+  --fs-200: 0.8125rem; //13px
+  --fs-300: 0.875rem; //14px
+  --fs-400: 0.9375rem; //15px
+  --fs-500: 1rem; //16px
+  --fs-600: 1.125rem; //18px
+  --fs-700: 1.375rem; //22px
+  --fs-800: 1.625rem; //26px
+
+  /* font family */ 
+  --ff-primary: "Space Mono", monospace;
+
+  /* line heights */
+  --lh-200: 1.36;
+  --lh-300: 1.462;
+  --lh-400: 1.5;
+  --lh-500: 1.67;
+  --lh-600: 1.92;
+
+  /* character spacing */
+  --cs-600: 2.5px;
+
+  /* miscellaneous variables */
+  --border-radius-400: 10px;
+  --border-radius-circle: 50%;
+  --container-shadow: 0 5px 10px -9px;
+}
+
+.theme-light {
+    /* light theme background colors */
+    --primary-bg-color:#f6f8ff; 
+    --secondary-bg-color: #fefefe; 
+  
+    /* light theme heading colors */
+    --primary-heading-color: #222731;
+    --secondary-heading-color: #2b3442; 
+    --tertiary-heading-color: #0079ff; 
+  
+    /* light theme text colors */
+    --primary-text-color: #697c9a; 
+    --secondary-text-color: rgba(75, 106, 155, 1); 
+
+    --hover-color: #90a4d4; 
+}
+
+.theme-dark {
+      /* light theme background colors */
+      --primary-bg-color: #141d2f; 
+      --secondary-bg-color: #1e2a47; 
+    
+      /* light theme heading colors */
+      --primary-heading-color: #ffffff;
+      --secondary-heading-color:  #ffffff; 
+      --tertiary-heading-color: #0079ff; 
+
+      /* light theme text colors */
+      --primary-text-color: #ffffff; 
+      --secondary-text-color: #ffffff; 
+
+      --hover-color: #90a4d4; 
+}
+
+//Sass Variables
+//breakpoints 
+$md-screens: 768px;
+$lg-screens: 1440px;
+
+//Mixins
+
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*,
+* ::before,
+* ::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  background-color: var(--primary-bg-color);
+  font-family: var(--ff-primary);
+  height: 100vh;
+  min-width: 23.4375rem;
+  max-width: 100%;
+  padding-block: min(8.2666667%, 8.75rem) 0;
+
+  @media only screen and (min-width: $md-screens) {
+    padding-block: min(18.23%, 9rem) 0;
+  }
+}
+
+h1,
+h2 {
+  font-weight: bold;
+  line-height: var(--lh-400);
+}
+
+h1 {
+  font-size: var(--fs-800);
+}
+
+h2 {
+  font-size: var(--fs-500);
+}
+
+h3 {
+  font-size: var(--fs-200);
+  line-height: var(--lh-300);
+
+}
+
+h4 {
+  font-size: var(--fs-100);
+  line-height: var(--lh-200);
+}
+
+p {
+  font-size: var(--fs-200);
+  line-height: var(--lh-600);
+}
+
+a {
+  text-decoration: none;
+}
+a:link {
+  color: var(--secondary-text-color)
+}
+a:visited {
+  color: var(--secondary-text-color)
+}
+a:focus {
+  color: var(--secondary-text-color)
+}
+a:hover {
+  color: var(--secondary-text-color)
+}
+a:active {
+  color: var(--secondary-text-color)
+}

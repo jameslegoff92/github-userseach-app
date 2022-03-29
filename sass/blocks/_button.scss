@@ -1,0 +1,30 @@
+/* ==========
+    buttons 
+   ========== */
+.btn {
+  font-size: var(--fs-200);
+  font-family: var(--ff-primary);
+  font-weight: bold;
+  letter-spacing: var(--cs-600);
+}
+
+.btn--light {
+  color: var(--secondary-text-color);
+}
+
+.btn--light:hover {
+  color: var(--primary-heading-color);
+  cursor: pointer;
+}
+
+.btn--light:hover + svg > path {
+  fill: var(--primary-heading-color);
+}
+
+.btn--dark {
+  color: var(--primary-text-color);
+}
+
+.btn--dark:hover {
+  color: var(--hover-color);
+}

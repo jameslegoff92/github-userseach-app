@@ -1,0 +1,12 @@
+/* ==========
+      svg
+   ========== */
+   .svg {
+    &__fill--light {
+      fill: var(--secondary-text-color);
+    }
+  
+    &__fill--dark {
+      fill: var(--hover-color);
+    }
+  }

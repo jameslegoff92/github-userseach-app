@@ -1,0 +1,21 @@
+/* ==========
+     page  
+   ========== */
+   .page {
+    &__header {
+      margin: 0 auto;
+    }
+  
+    &__searchbar {
+      margin-block: 2.1875rem min(4.266667%, 1.5rem);
+      margin-inline: auto;
+    
+      @media only screen and (min-width: $md-screens) {
+        margin-block: 2.1875rem 1.5rem;
+      }
+    }
+  
+    &__main {
+      margin: 16px auto;
+    }
+  }

@@ -1,0 +1,83 @@
+/* ============
+    searchbar 
+   ============ */
+   .searchbar {
+    background-color: var(--secondary-bg-color);
+    border-radius: var(--border-radius-400);
+    box-shadow: var(--container-shadow);
+    display: flex;
+    align-items: center;
+    column-gap: 7px;
+    padding-inline: min(1.8666667%, 0.625rem);
+    position: relative;
+    width: 87.2%;
+    max-width: 45.625rem;
+  
+    @media only screen and (min-width: $md-screens) {
+      width: 74.6%;
+    }
+    
+    &__input {
+      background: url(../assets/icon-search.svg) 0.1% center no-repeat;
+      border: none;
+      color: var(--primary-text-color);
+      min-height: 3.75rem;
+      padding-inline: 9.175% 0;
+      width: 100%;
+    
+      @media only screen and (min-width: $md-screens) {
+        background: url(../assets/icon-search.svg) 10px center/24.06px 24px no-repeat;
+        min-height: 4.3125rem;
+        padding-left: 50px;
+        padding-top: 5px;
+      }
+    }
+  
+    &__input:focus {
+      outline: none;
+    }
+  
+    &__input::placeholder {
+      color: var(--primary-text-color);
+      font-size: var(--fs-200);
+      font-family: var(--ff-primary);
+    
+      @media only screen and (min-width: $md-screens ) {
+        font-size: var(--fs-600);
+      }
+    }
+  
+    &__btn {
+      background-color: var(--tertiary-heading-color);
+      border: none;
+      border-radius: var(--border-radius-400);
+      color: #FFFFFF;
+      font-family: var(--ff-primary);
+      min-height: 2.875rem;
+      padding-block: 0.7813rem;
+      padding-inline: 1rem;
+      min-width: 5.25rem;
+    
+      @media only screen and (min-width: $md-screens) {
+        font-size: var(--fs-500);
+        min-height: 3.125rem;
+        width: 6.625rem;
+      }
+    }
+  
+    &__btn:hover {
+      background-color: rgba(0, 121, 255, 0.8);
+      cursor: pointer;
+    }
+  
+    &__errMsg--off {
+      display: none;
+    }
+  
+    &__errMsg--on {
+      color: red;
+      font-size: var(--fs-400);
+      position: absolute;
+      right: 110px;
+    }
+  }
