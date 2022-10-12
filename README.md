@@ -1,29 +1,34 @@
-#  Github User Search App
+# Space Tourism Website 
 
 ## Table of contents
 - [My process](#my-process)
 - [Built with](#built-with)
-- [Objectives](#objectives)
 - [What I learned](#what-i-learned)
 - [Author](#author)
 
-## Built with
+## My process
+
+1. Analyze design files before creating markup.
+2. Look for repetitive components or styles.
+3. Use the mobile first methodology, building section by section.
+4. Verify the site's aesthetics at all sizes.
+5. Refactor code to enhance readability.
+
+### Built with
 
 - Semantic HTML5 markup
-- CSS
+- BEM Methodology
 - Sass
-- JS
-- AJAX
+- GRID
+- JQuery
 - Mobile-first workflow
 
-## Objective of this Project
+### What I learned
 
-- The goal of the project was to create a Github search tool that can pull a searched user's information by using Github's api. The pulled data would then have to populate the user interface accordingly.
-
-## What I learned
-
-- How to fetch data from github's api.
-- How to create a light and dark theme for a project.
+- The pseudo elements ::after and ::before don't work on the html input element. 
+- The subtle differences between the keyup and keydown events. 
+- The basics of using JQuery to speed up the development process. 
+- How to handle possible edge cases related to user inputs.
 
 ## Author
 
