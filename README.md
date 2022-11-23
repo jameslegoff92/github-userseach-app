@@ -1,10 +1,10 @@
 # Space Tourism Website 
 
 ## Table of contents
-- [My process](#my-process)
-- [Built with](#built-with)
-- [What I learned](#what-i-learned)
-- [Author](#author)
+*[Built with](#built-with)*  
+*[Objectives](#objectives)*  
+*[What I learned](#what-i-learned)*  
+*[Author](#author)*
 
 ## My process
 
