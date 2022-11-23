@@ -1,4 +1,4 @@
-# Space Tourism Website 
+# Github Usersearch App
 
 ## Table of contents
 *[Built with](#built-with)*  
